@@ -100,15 +100,15 @@ namespace cSharpPracticeApp
         static void Main(string[] args)
         {
 
-            Print.valueln("string");
+            /*Print.valueln("string");
             Console.ForegroundColor = ConsoleColor.Red;
             PrintMenu();
             Console.ResetColor();
 
             ChooseOptionFromMenu();
-            Console.ResetColor();
+            Console.ResetColor();*/
 
-            
+            StudentGroup.createGroupOfStudents();
 
 
             Console.Read();

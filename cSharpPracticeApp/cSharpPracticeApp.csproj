@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASS\keywords.cs" />
+    <Compile Include="CLASS\StudentsName.cs" />
     <Compile Include="ControlStructures.cs" />
     <Compile Include="CLASS\Input.cs" />
     <Compile Include="CLASS\Print.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CLASS\Student.cs" />
     <Compile Include="CLASS\VS.cs" />
+    <Compile Include="CLASS\StudentGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
