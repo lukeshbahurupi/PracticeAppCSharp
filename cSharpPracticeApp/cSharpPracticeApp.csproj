@@ -49,8 +49,10 @@
     <Compile Include="ControlStructures.cs" />
     <Compile Include="CLASS\Input.cs" />
     <Compile Include="CLASS\Print.cs" />
+    <Compile Include="OOP\Abstraction.cs" />
     <Compile Include="OOP\Encapsulation.cs" />
     <Compile Include="OOP\Inheritance.cs" />
+    <Compile Include="OOP\Interface.cs" />
     <Compile Include="OOP\Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

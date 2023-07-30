@@ -16,25 +16,31 @@ namespace cSharpPracticeApp
     {
         static void PrintMenu()
         {
-            Console.WriteLine("Addtion ---- 1");
-            Console.WriteLine("String Concatination ---- 2");
-            Console.WriteLine("If Else ---- 3");
-            Console.WriteLine("WhileLoop ---- 4");
-            Console.WriteLine("Array and loops ---- 5");
-            Console.WriteLine(" Static Object Array ---- 6");
-            Console.WriteLine("Dynamic Object Array ---- 7");
-            Console.WriteLine("Two Dimention Array ---- 8");
-            Console.WriteLine("Jagged Array ---- 9");
-            Console.WriteLine("Binary Search ---- 10");
-            Console.WriteLine("Linear Search ---- 11");
-            Console.WriteLine("Clear Array Method ---- 12");
-            Console.WriteLine("Copy Array Method ---- 13");
-            Console.WriteLine("Reverse Array Method ---- 14");
-            Console.WriteLine("Sort Array Method ---- 15");
-            Console.WriteLine("different keywords ---- 16");
-            Console.WriteLine("\n OOPS \n Encapsulation ---- 17");
-            Console.WriteLine(" Inheritance ---- 18");
-            Console.WriteLine(" Polymorphism ---- 19");
+          string menu = "Addtion ---- 1\n" +
+                        "String Concatination ---- 2\n" +
+                        "If Else ---- 3WhileLoop ---- 4\n" +
+                        "Array and loops ---- 5\n" +
+                        "Static Object Array ---- 6\n" +
+                        "Dynamic Object Array ---- 7\n" +
+                        "Two Dimention Array ---- 8\n" +
+                        "Jagged Array ---- 9\n" +
+                        "Binary Search ---- 10\n" +
+                        "Linear Search ---- 11\n" +
+                        "Clear Array Method ---- 12\n" +
+                        "Copy Array Method ---- 13\n" +
+                        "Reverse Array Method ---- 14\n" +
+                        "Sort Array Method ---- 15\n" +
+                        "different keywords ---- 16\n" +
+                        "Create Groups of students ---- 17\n" +
+                        "\n OOPS \n Encapsulation ---- 18\n" +
+                        "Inheritance ---- 19\n" +
+                        "Polymorphism ---- 20\n" +
+                        "Abstraction ----21\n"+
+                        "Interface ----22\n";
+            
+            
+            Console.WriteLine(menu);
+
             
         }
 
@@ -44,7 +50,7 @@ namespace cSharpPracticeApp
             Console.WriteLine("Enter Your Choice of menu number:-");
             int n = Input.User<int>();
             Console.ResetColor();
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             ControlStructures ConstrolStructure = new ControlStructures();
             switch (n)
             {
@@ -70,19 +76,12 @@ namespace cSharpPracticeApp
                 break    ;
 
                 case 3: ConstrolStructure.IfElse();   break;
-
                 case 4: ConstrolStructure.WhileLoop();   break;
-
                 case 5: ConstrolStructure.ArrayWithForAndForEachLoop();  break;
-
                 case 6: ConstrolStructure.staticStudentInformation(); break;
-
                 case 7: ConstrolStructure.dynamicStudentInformation(); break;
-
                 case 8: ConstrolStructure.twoDArray(); break;
-
-                case 9: ConstrolStructure.jaggedArray(); break;
-                    
+                case 9: ConstrolStructure.jaggedArray(); break;                    
                 case 10: ConstrolStructure.BinarySerachMethod(); break;
                 case 11: ConstrolStructure.ArrayLinearSearch(); break;
                 case 12: ConstrolStructure.ClearArrayElements(); break;
@@ -93,6 +92,9 @@ namespace cSharpPracticeApp
                 case 17: Encapsulation.EncapsulationExample(); break;
                 case 18: Inheritance.InheritanceExample(); break;
                 case 19: Polymorphism.PolymorphismExample(); break;
+                case 20: StudentGroup.createGroupOfStudents(); break;
+                case 21: Abstraction.AbstractionExample(); break;
+                case 22: Interface.InterfaceExample(); break;
 
                 default: Console.WriteLine("Choice is incorrect");  break;
             }
@@ -100,16 +102,15 @@ namespace cSharpPracticeApp
         static void Main(string[] args)
         {
 
-            /*Print.valueln("string");
+            Print.valueln("string");
             Console.ForegroundColor = ConsoleColor.Red;
             PrintMenu();
             Console.ResetColor();
 
             ChooseOptionFromMenu();
-            Console.ResetColor();*/
+            Console.ResetColor();
 
-            StudentGroup.createGroupOfStudents();
-
+            
 
             Console.Read();
         }
