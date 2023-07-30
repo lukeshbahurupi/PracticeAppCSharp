@@ -36,7 +36,8 @@ namespace cSharpPracticeApp
                         "Inheritance ---- 19\n" +
                         "Polymorphism ---- 20\n" +
                         "Abstraction ----21\n"+
-                        "Interface ----22\n";
+                        "Interface ----22\n"+
+                        "MultipleInterfaces ----23\n";
             
             
             Console.WriteLine(menu);
@@ -95,6 +96,7 @@ namespace cSharpPracticeApp
                 case 20: StudentGroup.createGroupOfStudents(); break;
                 case 21: Abstraction.AbstractionExample(); break;
                 case 22: Interface.InterfaceExample(); break;
+                case 23: MultipleInterfaces.MultipleInterfacesExample(); break;
 
                 default: Console.WriteLine("Choice is incorrect");  break;
             }

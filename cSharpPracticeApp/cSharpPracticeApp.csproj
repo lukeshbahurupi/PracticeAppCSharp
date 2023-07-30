@@ -53,6 +53,7 @@
     <Compile Include="OOP\Encapsulation.cs" />
     <Compile Include="OOP\Inheritance.cs" />
     <Compile Include="OOP\Interface.cs" />
+    <Compile Include="OOP\MultipleInterfaces.cs" />
     <Compile Include="OOP\Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
