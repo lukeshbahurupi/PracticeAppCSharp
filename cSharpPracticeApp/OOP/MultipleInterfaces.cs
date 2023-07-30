@@ -35,11 +35,11 @@ namespace cSharpPracticeApp.OOP
     /*
     3. `ITablet` interface:
     */
-    interface ITablet
+    /*interface ITablet
     {
         void TakeNotes(string notes);
         void ReadEBook(string bookTitle);
-    }
+    }*/
 
     /*
 
@@ -47,7 +47,7 @@ namespace cSharpPracticeApp.OOP
 
     */
 
-    class ElectronicDevice : ISmartphone, ILaptop, ITablet
+    class ElectronicDevice : ISmartphone, ILaptop, //ITablet
     {
         // Implementation of ISmartphone interface
         public void MakeCall(string phoneNumber)
