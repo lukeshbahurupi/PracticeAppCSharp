@@ -25,6 +25,11 @@ namespace cSharpPracticeApp.OOP
     {
         public static void EncapsulationExample()
         {
+            Console.Clear();
+            Console.WriteLine("\n \t\t** Encapsulation **");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("Encapsulation is one of the four fundamental principles of object-oriented programming (OOP) and is aimed at bundling data(attributes)\r\nand methods(functions) that operate on that data within a single unit, known as a class.\r\nIt allows us to control the access to the internal state of an object and provides a mechanism to hide the implementation details from\r\nthe outside world.\r\n\r\nIn C#, encapsulation is achieved through the use of access modifiers, such as `public`, `private`, `protected`, and `internal`,\r\nto define the visibility of class members (fields, properties, and methods). By setting appropriate access levels, \r\nwe can enforce proper usage and prevent unwanted modifications to the object's state from outside the class.\r\n");
+            Console.ResetColor();
             // Creating a Student object
             Student student = new Student();
 

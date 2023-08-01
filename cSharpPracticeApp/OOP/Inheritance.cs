@@ -51,6 +51,11 @@ namespace cSharpPracticeApp.OOP
     {
         public static void InheritanceExample()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n \t\t** Inheritance **\n");
+            Console.WriteLine("Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one class to inherit the properties and\r\nbehaviors (fields and methods) of another class. The class that is inherited from is called the base class or parent class,\r\nand the class that inherits from the base class is called the derived class or child class. Inheritance facilitates code reuse,\r\nextensibility, and the creation of a hierarchical structure among classes.\r\n\r\nIn C#, you can implement inheritance using the `:` symbol followed by the name of the base class after the derived class declaration.\r\nThe derived class automatically gains access to all the public and protected members of the base class,\r\nand it can also override the behavior of virtual methods from the base class.\n");
+            Console.ResetColor();
             // Creating an instance of the derived class
             Dog dog = new Dog();
 
