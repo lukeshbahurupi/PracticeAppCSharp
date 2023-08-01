@@ -8,7 +8,7 @@ namespace cSharpPracticeApp
 {
     internal class Input
     {
-        #region Code Reference  
+        #region Code Reference of generic  
         /*static void Main()
         {
             ArrayInput arrayInput = new ArrayInput();
