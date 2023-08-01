@@ -61,6 +61,12 @@ namespace cSharpPracticeApp.OOP
     {
         public static void AbstractionExample()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n \t\t** Abstraction **\n");
+            Console.WriteLine("*\r\n Abstraction is one of the fundamental principles of object-oriented programming (OOP) and is closely related to encapsulation.\r\nIt is the process of simplifying complex systems by breaking them down into smaller, more manageable units. In the context of OOP,\r\nabstraction allows you to define the essential characteristics and behaviors of an object while hiding the unnecessary details from\r\nthe outside world.\r\n\r\nIn C#, abstraction is achieved through abstract classes and interfaces. An abstract class cannot be instantiated and serves as a blueprint\r\nfor other classes. It can contain both abstract and non-abstract (concrete) methods. An abstract method has no implementation in the \r\nabstract class and must be overridden by the derived class. Interfaces, on the other hand, are like contracts that define a set of method\r\nsignatures that implementing classes must provide.\n");
+            Console.ResetColor();
+            
             // Creating instances of CircleShape and RectangleShape
             CircleShape circle = new CircleShape { Radius = 5 };
             RectangleShape rectangle = new RectangleShape { Width = 4, Height = 6 };

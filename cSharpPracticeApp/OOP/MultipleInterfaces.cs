@@ -13,13 +13,13 @@ namespace cSharpPracticeApp.OOP
 
     1. `ISmartphone` interface:
     */
-
+   
     interface ISmartphone
     {
         void MakeCall(string phoneNumber);
         void SendTextMessage(string phoneNumber, string message);
     }
-
+    
 
     /*
 
@@ -92,8 +92,13 @@ namespace cSharpPracticeApp.OOP
     {
         public static void MultipleInterfacesExample()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n \t\t** Multiple Interface **\n");
+            Console.WriteLine("In this example, the `ElectronicDevice` class implements all three interfaces: `ISmartphone`, `ILaptop`, and `ITablet`.\r\nEach interface defines specific methods that the class must implement.\r\n\r\nWhen you run the `Main` method, it creates an instance of the `ElectronicDevice` class and calls various methods from each interface.\r\nThe `ElectronicDevice` class provides the implementation for all the methods declared in the interfaces, allowing it to act as a smartphone, laptop,\r\nand tablet, all in one class. This is how multiple interfaces enable a class to have multiple behaviors and functionalities through separate contracts\r\ndefined by the interfaces.\n ");
+            Console.ResetColor();
             ElectronicDevice device = new ElectronicDevice();
-
+            string str;
             // Calling methods from ISmartphone interface
             device.MakeCall("1234567890");
             device.SendTextMessage("9876543210", "Hello there!");
@@ -104,7 +109,7 @@ namespace cSharpPracticeApp.OOP
             device.Shutdown();
 
             // Calling methods from ITablet interface
-            device.TakeNotes("Important meeting details");
+            device.TakeNotes("Important meeting details"); 
             device.ReadEBook("The Adventures of Tom Sawyer");
         }
     }

@@ -48,6 +48,8 @@ namespace cSharpPracticeApp.OOP
 
     internal class Interface
     {
+           
+
         // Method to draw any shape that implements IDrawable
         static void DrawShape(IDrawable shape)
         {
@@ -55,6 +57,11 @@ namespace cSharpPracticeApp.OOP
         }
         public static void InterfaceExample()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("\n \t\t** Interface **\n");
+            Console.WriteLine(" An interface in C# is a reference type that defines a contract or a set of rules that a class must follow.\r\n    It only contains method signatures, properties, events, or indexers, without any implementation.\r\n    A class that implements an interface is required to provide implementations for all the members declared in the interface.\n");
+            Console.ResetColor();
             // Create objects of Circle and Square
             GeoCircle circle = new GeoCircle(5);
             GeoSquare square = new GeoSquare(10);

@@ -18,7 +18,8 @@ namespace cSharpPracticeApp
         {
           string menu = "Addtion ---- 1\n" +
                         "String Concatination ---- 2\n" +
-                        "If Else ---- 3WhileLoop ---- 4\n" +
+                        "If Else ---- 3\n" +
+                        "WhileLoop ---- 4\n" +
                         "Array and loops ---- 5\n" +
                         "Static Object Array ---- 6\n" +
                         "Dynamic Object Array ---- 7\n" +
