@@ -69,9 +69,15 @@ namespace cSharpPracticeApp
 
                     Console.WriteLine("the sum of {0} and {1} is {2}", number1, number2, Result);
                 break;
-
+                       
                 case 2:
-                    string name = "Komal Kate", company = "Arohi FI Management(IT)", designation = "UI/UX designer";
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("\n \t\t** String concatenation **");
+                    Console.WriteLine("String concatenation is the process of combining two or more strings to create a single, longer string.\r\nIn C#, string concatenation can be achieved using various methods and operators. \r\nThe most common methods for string concatenation are using the `+` operator, `string.Concat` method, and `StringBuilder`. \n");
+                    Console.ResetColor();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    string name = "Lukesh Bahurupi", company = "Arohi FI Management(IT)", designation = "Web App Developer";
                     int yearOfExper = 1;
 
                     Console.WriteLine($"I'm {name} and working with {company} as {designation} with Year of Experiance {yearOfExper} Year");

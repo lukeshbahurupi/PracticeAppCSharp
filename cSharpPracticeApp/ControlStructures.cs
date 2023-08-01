@@ -15,6 +15,12 @@ namespace cSharpPracticeApp
         
         public void IfElse()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\n \t\t** if esle  Statements**");
+            Console.WriteLine("`if` and `else` are conditional statements used in programming to make decisions based on the evaluation of certain conditions. They control the flow of execution in a program by allowing different blocks of code to be executed based on whether a specific condition is true or false.\r\n\r\nHere's an overview of `if` and `else` statements:\r\n\r\n1. **if statement**: The `if` statement allows you to execute a block of code only if a specified condition is true. If the condition is false, the block of code is skipped, and the program continues to the next statement.\r\n\r\n2. **else statement**: The `else` statement is used in combination with the `if` statement. It allows you to specify an alternative block of code to be executed if the `if` condition is false.\r\n\r\n3. **else if statement**: The `else if` statement is used to specify additional conditions to check after the initial `if` condition. It allows you to chain multiple conditions and execute different blocks of code based on the evaluation of each condition.\r\n\r\n4. **Nested if-else**: You can also nest `if` and `else` statements inside each other to create more complex decision-making scenarios. This allows you to handle different cases and conditions more precisely.\r\n\r\nThe general syntax for `if` and `else` statements is as follows:\r\n\r\n```csharp\r\nif (condition)\r\n{\r\n    // Code to execute if the condition is true\r\n}\r\nelse if (condition2)\r\n{\r\n    // Code to execute if condition2 is true (optional, can have multiple else if blocks)\r\n}\r\nelse\r\n{\r\n    // Code to execute if none of the conditions above are true (optional)\r\n}\r\n```\r\n\r\nIn C#, the condition in an `if` statement must evaluate to a Boolean value (`true` or `false`). If the condition is true, the block of code following the `if` statement is executed. If the condition is false, the program checks the `else if` statements (if present) or executes the `else` block (if present).\r\n\r\nBy using `if` and `else` statements, you can control the flow of your program based on certain conditions, making your code more dynamic and responsive to different scenarios.\r\n\r\nIt's important to handle all possible cases and edge cases in your code to ensure that it behaves as expected under various conditions. Properly using `if` and `else` statements helps you write robust and reliable programs.\n");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
             /*get gread from marks*/
             Console.WriteLine("Enter Marks:-");
             int marks = int.Parse(Console.ReadLine());
@@ -41,6 +47,7 @@ namespace cSharpPracticeApp
         }
         public void WhileLoop()
         {
+
             Console.WriteLine("Enter Number to Generate table :-");
             int num = int.Parse(Console.ReadLine()),i=0;
 
@@ -52,6 +59,13 @@ namespace cSharpPracticeApp
         }
         public void ArrayWithForAndForEachLoop()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\n \t\t** Array (1-D) **");
+            Console.WriteLine("An array is a data structure in C# that allows you to store a collection of elements of the same type in a contiguous block of memory. It provides a convenient and efficient way to access and manipulate multiple elements at once. Arrays are widely used in programming to hold lists of items such as numbers, characters, or objects.\r\n\r\nKey points about arrays in C#:\r\n\r\n1. **Fixed Size**: Arrays have a fixed size, meaning you need to specify the number of elements it can hold when creating the array. Once the array is created, its size cannot be changed.\r\n\r\n2. **Zero-based Indexing**: Elements in an array are accessed using an index, which starts from 0 for the first element, 1 for the second element, and so on. The last element's index is one less than the array's size.\r\n\r\n3. **Single Type**: All elements in an array must be of the same data type (e.g., int, string, char, etc.). C# does not allow mixing different data types in a single array.\r\n\r\n4. **Contiguous Memory**: The elements in an array are stored in contiguous memory locations. This property enables fast access to elements using their index.\r\n\r\n5. **Length Property**: You can find the number of elements in an array using its `Length` property.\r\n\r\n6. **Declaration and Initialization**: Arrays can be declared and initialized using square brackets `[]` with the number of elements specified in the declaration, or using the `new` keyword along with the array type.\r\n\r\n7. **Multidimensional Arrays**: C# supports multidimensional arrays (e.g., 2D arrays) to store elements in multiple dimensions or in the form of a matrix.\r\n\r\n8. **Jagged Arrays**: Jagged arrays are arrays of arrays, where each element of the array can be another array, potentially of different sizes.\r\n\r\n9. **Array Methods**: Arrays provide several methods like `Sort`, `Reverse`, `Copy`, and more to manipulate the array's elements efficiently.\r\n\r\n10. **For-each Loop**: C# provides a `foreach` loop to iterate over the elements of an array without using an explicit index.\r\n\r\nArrays are an essential part of C# programming and are widely used in various scenarios, including data storage, sorting, searching, and handling large amounts of data. They provide a simple and efficient way to manage collections of elements with fixed sizes and identical data types.\n");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
+
             Console.WriteLine("Enter Size Of Array :-");
             int size = int.Parse(Console.ReadLine());
 
@@ -281,7 +295,12 @@ namespace cSharpPracticeApp
                 int[][] jArray1 = new int[2][]; // two single-dimensional arrays 
                 int[][,] jArray2 = new int[3][,]; // can include three two-dimensional arrays
             */
-
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\n \t\t** Polymorphism **");
+            Console.WriteLine("Jagged array is an array of 1-D array.\r\nIn 2-D array each row contains same number of columns where as in Jagged array, each row contents different no. of columns.\r\nA jagged array is initialized with two square brackets [][]. The first bracket specifies the size of an array, \r\n                and the second bracket specifies the dimensions of the array which is going to be stored.\r\n\r\nint[][] jArray1 = new int[2][]; // two single-dimensional arrays \r\nint[][,] jArray2 = new int[3][,]; // can include three two-dimensional arrays\n");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(" Enter size of Jagged Array :- ");
             int size = int.Parse(Console.ReadLine());
             //[size][type of Array(1-D)]

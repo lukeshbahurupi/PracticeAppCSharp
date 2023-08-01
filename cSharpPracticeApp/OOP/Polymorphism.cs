@@ -104,10 +104,11 @@ namespace cSharpPracticeApp.OOP
         public static void PolymorphismExample()
         {
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("\n \t\t** Polymorphism **");
             Console.WriteLine("* Polymorphism is one of the fundamental principles of object-oriented programming (OOP) and refers to the ability of different objects\r\n * (classes) to be treated as objects of a common base class, often allowing them to respond to the same method calls in different ways.\r\n * It allows you to write code that can work with objects of different types through a common interface or base class,\r\n * making your code more flexible, reusable, and easier to maintain.\r\n\r\nThere are two types of polymorphism in C#:\r\n\r\n1. **Compile-time (Static) Polymorphism * *: This is achieved through method overloading and operator overloading.\r\n\r\n2. **Run-time (Dynamic) Polymorphism * *: This is achieved through method overriding and interface-based polymorphism.\n");
             Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine("**Method Overloading**");
             MathOperations math = new MathOperations();
