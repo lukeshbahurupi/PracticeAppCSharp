@@ -12,7 +12,7 @@ namespace cSharpPracticeApp.CLASS
         {
             List<string> StudentNames = new List<string>();
 
-            Console.WriteLine("Enter Student Name(Type 'done' when no more student name)");
+            Console.WriteLine("Enter Student Name(Type 'done' when no more student name) (if you have copied List you can past it here).");
 
             while (true)
             {
@@ -36,7 +36,6 @@ namespace cSharpPracticeApp.CLASS
 
         static List<string> ShuffledListOfStudent()
         {
-
             List<string> StudentNames = UserInputStudentName();
 
             Random random = new Random();
@@ -61,6 +60,7 @@ namespace cSharpPracticeApp.CLASS
 
             List<string> StudentNames = ShuffledListOfStudent();
             if (StudentNames.Count == 0) return;
+            Console.WriteLine("Studet List are added and List is shuffled");
 
             Console.Write("Enter Group Count : ");
             int groupCount = int.Parse(Console.ReadLine());
