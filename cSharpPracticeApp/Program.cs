@@ -38,7 +38,8 @@ namespace cSharpPracticeApp
                         "Polymorphism ---- 20\n" +
                         "Abstraction ----21\n"+
                         "Interface ----22\n"+
-                        "MultipleInterfaces ----23\n";
+                        "MultipleInterfaces ----23\n" +
+                        "Extension methods ----24\n";
             
             
             Console.WriteLine(menu);
@@ -57,12 +58,13 @@ namespace cSharpPracticeApp
             switch (n)
             {
                 case 1:
+                    Console.Clear();
                     int number1, number2, Result;
 
-                    Console.WriteLine("enter Nomber 1:- ");
+                    Console.WriteLine("enter Number 1:- ");
                     number1 = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("enter Nomber 2:- ");
+                    Console.WriteLine("enter Number 2:- ");
                     number2 = int.Parse(Console.ReadLine());
 
                     Result = number2 + number1;
@@ -83,29 +85,30 @@ namespace cSharpPracticeApp
                     Console.WriteLine($"I'm {name} and working with {company} as {designation} with Year of Experiance {yearOfExper} Year");
                 break    ;
 
-                case 3: ConstrolStructure.IfElse();   break;
-                case 4: ConstrolStructure.WhileLoop();   break;
-                case 5: ConstrolStructure.ArrayWithForAndForEachLoop();  break;
-                case 6: ConstrolStructure.staticStudentInformation(); break;
-                case 7: ConstrolStructure.dynamicStudentInformation(); break;
-                case 8: ConstrolStructure.twoDArray(); break;
-                case 9: ConstrolStructure.jaggedArray(); break;                    
-                case 10: ConstrolStructure.BinarySerachMethod(); break;
-                case 11: ConstrolStructure.ArrayLinearSearch(); break;
-                case 12: ConstrolStructure.ClearArrayElements(); break;
-                case 13: ConstrolStructure.CopyArrayElements(); break;
-                case 14: ConstrolStructure.ReverseArray(); break;
-                case 15: ConstrolStructure.SortArray(); break;
-                case 16: keywords.keywordExample(); break;
-                case 17: Encapsulation.EncapsulationExample(); break;
-                case 18: Inheritance.InheritanceExample(); break;
-                case 19: Polymorphism.PolymorphismExample(); break;
-                case 20: StudentGroup.createGroupOfStudents(); break;
-                case 21: Abstraction.AbstractionExample(); break;
-                case 22: Interface.InterfaceExample(); break;
-                case 23: MultipleInterfaces.MultipleInterfacesExample(); break;
+                case 3:Console.Clear();  ConstrolStructure.IfElse();   break;
+                case 4:Console.Clear(); ConstrolStructure.WhileLoop();   break;
+                case 5:Console.Clear(); ConstrolStructure.ArrayWithForAndForEachLoop();  break;
+                case 6:Console.Clear(); ConstrolStructure.staticStudentInformation(); break;
+                case 7:Console.Clear(); ConstrolStructure.dynamicStudentInformation(); break;
+                case 8:Console.Clear(); ConstrolStructure.twoDArray(); break;
+                case 9:Console.Clear(); ConstrolStructure.jaggedArray(); break;                    
+                case 10:Console.Clear(); ConstrolStructure.BinarySerachMethod(); break;
+                case 11:Console.Clear(); ConstrolStructure.ArrayLinearSearch(); break;
+                case 12:Console.Clear(); ConstrolStructure.ClearArrayElements(); break;
+                case 13:Console.Clear(); ConstrolStructure.CopyArrayElements(); break;
+                case 14:Console.Clear(); ConstrolStructure.ReverseArray(); break;
+                case 15:Console.Clear(); ConstrolStructure.SortArray(); break;
+                case 16:Console.Clear(); keywords.keywordExample(); break;
+                case 17:Console.Clear(); StudentGroup.createGroupOfStudents(); break;
+                case 18:Console.Clear(); Encapsulation.EncapsulationExample();  break;
+                case 19:Console.Clear(); Inheritance.InheritanceExample(); break;
+                case 20:Console.Clear(); Polymorphism.PolymorphismExample(); break;
+                case 21:Console.Clear(); Abstraction.AbstractionExample(); break;
+                case 22:Console.Clear(); Interface.InterfaceExample(); break;
+                case 23:Console.Clear(); MultipleInterfaces.MultipleInterfacesExample(); break;
+                case 24:Console.Clear(); new UseTestLibrary1().useOfTestLibrarrClass1(); break;
 
-                default: Console.WriteLine("Choice is incorrect");  break;
+                default:Console.Clear(); Console.WriteLine("Choice is incorrect");  break;
             }
         }
         static void Main(string[] args)
