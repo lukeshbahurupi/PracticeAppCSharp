@@ -53,6 +53,8 @@
   <ItemGroup>
     <Compile Include="CLASS\keywords.cs" />
     <Compile Include="CLASS\StudentsName.cs" />
+    <Compile Include="Collections\ArrayListClass.cs" />
+    <Compile Include="Collections\ListClass.cs" />
     <Compile Include="ControlStructures.cs" />
     <Compile Include="CLASS\Input.cs" />
     <Compile Include="CLASS\Print.cs" />
@@ -78,8 +80,6 @@
       <Name>Mathematics</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Collections\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
