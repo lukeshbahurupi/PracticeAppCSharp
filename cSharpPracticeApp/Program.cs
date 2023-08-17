@@ -39,7 +39,11 @@ namespace cSharpPracticeApp
                         "Abstraction ----21\n"+
                         "Interface ----22\n"+
                         "MultipleInterfaces ----23\n" +
-                        "Extension methods ----24\n";
+                        "Extension methods ----24\n" +
+                        "\nCollections\n" +
+                        "ArrayList ____25\n" +
+                        "List ____26\n" +
+                        "";
             
             
             Console.WriteLine(menu);

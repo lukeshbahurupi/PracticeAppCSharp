@@ -91,6 +91,13 @@ namespace cSharpPracticeApp.Collections
             List<int> numbs = new List<int> { 10, 20, 30, 20 };
             int idx1 = numbs.LastIndexOf(20); // 3
                         int idx2 = numbs.LastIndexOf(40); // -1 (not found)
+
+
+
+            string AllMethods = "Common methods of `List<T>`:\r\n\r\n1. `Add(T item)`: Adds an item to the end of the list.\r\n\r\n2. `AddRange(IEnumerable<T> collection)`: Adds a collection of items to the end of the list.\r\n\r\n3. `Insert(int index, T item)`: Inserts an item at the specified index.\r\n\r\n4. `Remove(T item)`: Removes the first occurrence of the specified item from the list.\r\n\r\n5. `RemoveAt(int index)`: Removes the item at the specified index.\r\n\r\n6. `RemoveRange(int index, int count)`: Removes a range of elements starting from the specified index.\r\n\r\n7. `Clear()`: Removes all elements from the list.\r\n\r\n8. `Contains(T item)`: Determines whether the list contains the specified item.\r\n\r\n9. `IndexOf(T item)`: Returns the index of the first occurrence of the specified item.\r\n\r\n10. `LastIndexOf(T item)`: Returns the index of the last occurrence of the specified item.\r\n\r\n11. `Sort()`: Sorts the elements in the list.\r\n\r\n12. `Reverse()`: Reverses the order of the elements in the list.\r\n\r\n13. `ToArray()`: Converts the list to an array.\r\n\r\n14. `Count`: Property that returns the number of elements in the list.\r\n\r\n15. `Capacity`: Property that gets or sets the total number of elements the internal data structure can hold without resizing.\r\n\r\n16. `TrimExcess()`: Sets the capacity to the actual number of elements in the list.\r\n\r\n17. `ForEach(Action<T> action)`: Performs the specified action on each element of the list.\r\n\r\n18. `Find(Predicate<T> match)`: Finds the first element that matches the specified condition.\r\n\r\n19. `FindLast(Predicate<T> match)`: Finds the last element that matches the specified condition.\r\n\r\n20. `FindAll(Predicate<T> match)`: Finds all elements that match the specified condition.\r\n\r\nThese are some of the commonly used methods of `List<T>`. It's important to explore the documentation for the `List<T>` class and other collection classes to fully understand the capabilities they offer and leverage them effectively in your C# applications.";
+            Console.WriteLine(AllMethods);
+
+
             //
 
             //11. * *Sort() * *:
